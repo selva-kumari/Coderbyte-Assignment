@@ -5,6 +5,8 @@ public class TradeDetails {
 	private String customerName;
 	private double totalAmount;
 	private double rate;
+	TradeDetails(){
+	}
 	TradeDetails(String currencyPair,String customerName,double totalAmount,double rate)
 	{
 		this.currencyPair =currencyPair;
