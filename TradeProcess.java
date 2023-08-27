@@ -3,7 +3,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 public class TradeProcess extends TradeDetails
-{       
+{           TradeProcess(){
+            }
 	    TradeProcess(String currencyPair, String customerName, double totalAmount, double rate) 
 	    {
 		super(currencyPair, customerName, totalAmount, rate);
