@@ -33,15 +33,14 @@ public class TradeController {
 		return "Currency information added successfully";
 	}
 	
-    @GetMapping("/gettradedetails")
-	public List<Trade> getAllTradeDetails() {
+       @GetMapping("/gettradedetails")
+       public List<Trade> getAllTradeDetails() {
 	    return tradeservice.getAllTradeDetails();
-	    }
+      }
     
-    @GetMapping("/getcurrencydetails")
-    public List<CurrencyRate> getAllCurrencyDetails(){
-    	return tradeservice.getAllCurrencyDetails();
-    	
-    }
+      @GetMapping("/getcurrencydetails")
+      public List<CurrencyRate> getAllCurrencyDetails(){
+    	   return tradeservice.getAllCurrencyDetails();
+      }
 
 }
