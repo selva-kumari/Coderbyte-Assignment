@@ -34,7 +34,8 @@ public class TradeService {
 			}
 
 			throw new TradeNotFoundException("Trade not found for currency pair: " + trade.getCurrencyPair());
-		} catch (TradeNotFoundException e) {
+		}
+		catch (TradeNotFoundException e) {
 			e.printStackTrace();
 			return "Trade not found";
 		}
